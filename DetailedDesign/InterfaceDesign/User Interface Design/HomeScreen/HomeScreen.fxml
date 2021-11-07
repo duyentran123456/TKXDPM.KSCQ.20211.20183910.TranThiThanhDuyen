@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="788.0" prefWidth="1326.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="104.0" prefWidth="1326.0" style="-fx-background-color: #ccebff; -fx-border-color: #33adff;">
+         <children>
+            <VBox prefHeight="102.0" prefWidth="231.0">
+               <children>
+                  <Pane prefHeight="102.0" prefWidth="237.0">
+                     <children>
+                        <ImageView fx:id="aimsImage" fitHeight="94.0" fitWidth="115.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Desktop/AIMS/aims%20logo.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="97.0" layoutY="28.0" prefHeight="41.0" prefWidth="100.0" text="    AIMS" textAlignment="CENTER" textFill="#5091e6">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <HBox prefHeight="102.0" prefWidth="798.0">
+               <children>
+                  <Pane prefHeight="102.0" prefWidth="562.0">
+                     <children>
+                        <TextField layoutX="17.0" layoutY="27.0" prefHeight="48.0" prefWidth="528.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font></TextField>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="102.0" prefWidth="158.0">
+                     <children>
+                        <SplitMenuButton fx:id="splitMenuBtnSearch" layoutY="27.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="124.0" text="Search">
+                          <items>
+                          </items>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </SplitMenuButton>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <VBox prefHeight="102.0" prefWidth="161.0">
+               <children>
+                  <Pane prefHeight="102.0" prefWidth="144.0">
+                     <children>
+                        <ImageView fx:id="cartImage" fitHeight="64.0" fitWidth="72.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Desktop/AIMS/cart%20icon.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="numMediaInCart" layoutX="24.0" layoutY="5.0" prefHeight="16.0" prefWidth="64.0" text="0 media" textFill="#e8063b" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox fx:id="hboxMedia" layoutX="24.0" layoutY="123.0" prefHeight="629.0" prefWidth="1283.0">
+         <children>
+            <VBox fx:id="vboxMedia1" prefHeight="629.0" prefWidth="321.0" style="-fx-border-color: #33adff;">
+            <HBox layoutX="6.0" layoutY="8.0" prefHeight="187.0" prefWidth="272.0">
+         <children>
+            <VBox prefHeight="187.0" prefWidth="141.0">
+               <children>
+                  <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                     </image>
+                  </ImageView>
+               </children>
+                        <HBox.margin>
+                           <Insets top="10.0" />
+                        </HBox.margin>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                              <VBox.margin>
+                                 <Insets left="35.0" />
+                              </VBox.margin></Label>
+                  <Label text="Price    1000">
+                              <padding>
+                                 <Insets top="5.0" />
+                              </padding></Label>
+                  <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                              <padding>
+                                 <Insets bottom="10.0" top="5.0" />
+                              </padding></Label>
+                           <Spinner editable="true" initialValue="1" />
+                  <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                              <children>
+                                 <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                    <VBox.margin>
+                                       <Insets top="15.0" />
+                                    </VBox.margin>
+                                 </Button>
+                              </children>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                              <padding>
+                                 <Insets top="20.0" />
+                              </padding>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+                  <padding>
+                     <Insets left="5.0" />
+                  </padding>
+      </HBox>
+               <HBox prefHeight="187.0" prefWidth="272.0">
+                  <children>
+                     <VBox prefHeight="187.0" prefWidth="141.0">
+                        <children>
+                           <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                     </VBox>
+                     <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                        <children>
+                           <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                              <VBox.margin>
+                                 <Insets left="35.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label text="Price    1000">
+                              <padding>
+                                 <Insets top="5.0" />
+                              </padding>
+                           </Label>
+                           <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                              <padding>
+                                 <Insets bottom="10.0" top="5.0" />
+                              </padding>
+                           </Label>
+                           <Spinner editable="true" initialValue="1" />
+                           <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                              <children>
+                                 <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                    <VBox.margin>
+                                       <Insets top="15.0" />
+                                    </VBox.margin>
+                                 </Button>
+                              </children>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                              <padding>
+                                 <Insets top="20.0" />
+                              </padding>
+                           </VBox>
+                        </children>
+                     </VBox>
+                  </children>
+                  <VBox.margin>
+                     <Insets top="20.0" />
+                  </VBox.margin>
+                  <padding>
+                     <Insets left="5.0" />
+                  </padding>
+               </HBox>
+               <HBox prefHeight="172.0" prefWidth="319.0">
+                  <children>
+                     <VBox prefHeight="187.0" prefWidth="141.0">
+                        <children>
+                           <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                     </VBox>
+                     <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                        <children>
+                           <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                              <VBox.margin>
+                                 <Insets left="35.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label text="Price    1000">
+                              <padding>
+                                 <Insets top="5.0" />
+                              </padding>
+                           </Label>
+                           <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                              <padding>
+                                 <Insets bottom="10.0" top="5.0" />
+                              </padding>
+                           </Label>
+                           <Spinner editable="true" initialValue="1" />
+                           <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                              <children>
+                                 <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                    <VBox.margin>
+                                       <Insets top="15.0" />
+                                    </VBox.margin>
+                                 </Button>
+                              </children>
+                              <VBox.margin>
+                                 <Insets />
+                              </VBox.margin>
+                              <padding>
+                                 <Insets top="20.0" />
+                              </padding>
+                           </VBox>
+                        </children>
+                     </VBox>
+                  </children>
+                  <VBox.margin>
+                     <Insets top="20.0" />
+                  </VBox.margin>
+                  <padding>
+                     <Insets left="5.0" />
+                  </padding>
+               </HBox>
+            </VBox>
+            <VBox fx:id="vboxMedia11" prefHeight="629.0" prefWidth="321.0" style="-fx-border-color: #33adff;">
+               <children>
+                  <HBox layoutX="6.0" layoutY="8.0" prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="172.0" prefWidth="319.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxMedia12" prefHeight="629.0" prefWidth="321.0" style="-fx-border-color: #33adff;">
+               <children>
+                  <HBox layoutX="6.0" layoutY="8.0" prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="172.0" prefWidth="319.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxMedia13" prefHeight="629.0" prefWidth="321.0" style="-fx-border-color: #33adff;">
+               <children>
+                  <HBox layoutX="6.0" layoutY="8.0" prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="187.0" prefWidth="272.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="172.0" prefWidth="319.0">
+                     <children>
+                        <VBox prefHeight="187.0" prefWidth="141.0">
+                           <children>
+                              <ImageView fitHeight="183.0" fitWidth="373.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../OneDrive%20-%20Hanoi%20University%20of%20Science%20and%20Technology/Pictures/Logo_Hust.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="197.0" prefWidth="130.0">
+                           <children>
+                              <Label contentDisplay="CENTER" prefHeight="32.0" prefWidth="83.0" text="Book 1">
+                                 <VBox.margin>
+                                    <Insets left="35.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Price    1000">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="42.0" text="Avail     50">
+                                 <padding>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner editable="true" initialValue="1" />
+                              <VBox layoutX="10.0" layoutY="93.0" prefHeight="69.0" prefWidth="119.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="130.0" text="Add to cart" textAlignment="CENTER">
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
