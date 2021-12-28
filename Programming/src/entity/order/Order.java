@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import shippingFee.IShippingFeeCalculator;
 import utils.Configs;
+import validation.RushSupportValidator;
 
 public class Order {
     
     private int shippingFees;
-    private List lstOrderMedia;
+    private List<OrderMedia> lstOrderMedia;
     private HashMap<String, String> deliveryInfo;
 
     public Order(){
@@ -59,6 +61,21 @@ public class Order {
             amount += om.getPrice();
         }
         return (int) (amount + (Configs.PERCENT_VAT/100)*amount);
+    }
+    
+    public void setShippingFee(IShippingFeeCalculator calculator) {
+    	this.shippingFees = calculator.calculateShippingFee(this.getAmount());
+    }
+    
+    public boolean checkRushSupport() {
+    	RushSupportValidator validator = new RushSupportValidator();
+    	
+    	if(!validator.checkAddressRushSupport(this.deliveryInfo.get("address"))) return false;
+    	for(OrderMedia orderMedia: this.lstOrderMedia) {
+    		if(validator.checkMediaRushSupport(orderMedia)) return false;
+    	}
+    	
+    	return true;
     }
 
 }

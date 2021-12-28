@@ -81,7 +81,7 @@ public class ShippingScreenHandler extends BaseScreenHandler implements Initiali
 		}
 	
 		// calculate shipping fees
-		int shippingFees = getBController().calculateShippingFee(order);
+		int shippingFees = order.getShippingFees();
 		order.setShippingFees(shippingFees);
 		order.setDeliveryInfo(messages);
 		
